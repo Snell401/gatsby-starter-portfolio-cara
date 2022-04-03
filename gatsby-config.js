@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: `Darren snell`,
     siteTitleAlt: `Darren Snell`,
     siteHeadline: `Darren Snell, Web Developer, Full Stack Developer`,
-    siteUrl: `https://cara.lekoarts.de`,
+    siteUrl: `https://darrensnell.engineer`,
     siteDescription: `A webpage to introduce myself to the world of web development.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
