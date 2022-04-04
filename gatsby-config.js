@@ -7,27 +7,39 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Darren snell`,
-    siteTitleAlt: `Darren Snell`,
-    siteHeadline: `Darren Snell, Web Developer, Full Stack Developer`,
+    siteTitle: `About Me`,
+    siteTitleAlt: `Darren Snell - About Me`,
+    siteHeadline: `Darren Snell - About Me`,
     siteUrl: `https://darrensnell.engineer`,
-    siteDescription: `A webpage to introduce myself to the world of web development.`,
+    siteDescription: `A Website to introduce myself to the world`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Darren Snell`,
   },
   plugins: [
+    
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
       options: {},
     },
     {
+      resolve: `gatsby-plugin-mailgo`,
+      options: {
+        mailgoConfig: {
+          dark: true,
+          mailto: true,
+          tel: true,
+          showFooter:true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Darren Snell`,
-        short_name: `Darren Snell`,
-        description: `An introduction to web development.`,
+        name: `Cara - @lekoarts/gatsby-theme-cara`,
+        short_name: `Cara`,
+        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
         start_url: `/`,
         background_color: `#141821`,
         // This will impact how browsers show your PWA/website
@@ -57,5 +69,8 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    // {
+    //   plugins: [`gatsby-plugin-fontawesome-css`],
+    // }
   ].filter(Boolean),
 }
