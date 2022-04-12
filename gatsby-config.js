@@ -32,7 +32,7 @@ module.exports = {
           dark: true,
           mailto: true,
           tel: true,
-          showFooter:true,
+          showFooter:false,
         },
       },
     },
