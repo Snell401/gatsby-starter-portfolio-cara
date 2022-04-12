@@ -19,7 +19,7 @@ module.exports = {
   plugins: [
     
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: ``,
       // See the theme's README for all available options
       options: {
         
